@@ -3,7 +3,7 @@ import SpacePhoto from '../assets/images/projectspace.png'
 import HyperDrive from '../assets/images/hyperdrive.png'
 import CodeQuiz from '../assets/images/codequiz.png'
 import EmployeeTracker from '../assets/images/employeeTracker.png'
-import NoteTaker from '../assets/images/noteTaker.png'
+import NoteTaker from '../assets/images/NoteTaker.png'
 import TextEditor from '../assets/images/textEdit.png'
 
 function Portfolio() {

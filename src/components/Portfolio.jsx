@@ -1,5 +1,10 @@
 import React from "react";
 import SpacePhoto from '../assets/images/projectspace.png'
+import HyperDrive from '../assets/images/hyperdrive.png'
+import CodeQuiz from '../assets/images/codequiz.png'
+import EmployeeTracker from '../assets/images/employeeTracker.png'
+import NoteTaker from '../assets/images/noteTaker.png'
+import TextEditor from '../assets/images/textEdit.png'
 
 function Portfolio() {
   const projects = [
@@ -11,15 +16,33 @@ function Portfolio() {
     },
     {
       id: 2,
-      title: "Project 2",
-      imageUrl: "path_to_project_2_image.jpg",
-      websiteUrl: "https://project2.com",
+      title: "Project Hyperdrive",
+      imageUrl: HyperDrive,
+      websiteUrl: "https://github.com/kalaniJ94/Project_Hyperdrive",
     },
     {
       id: 3,
-      title: "Project 3",
-      imageUrl: "path_to_project_3_image.jpg",
-      websiteUrl: "https://project3.com",
+      title: "Code Quiz",
+      imageUrl: CodeQuiz,
+      websiteUrl: "https://alester77.github.io/Code-Quiz/",
+    },
+    {
+      id: 4,
+      title: "Employee Tracker CLI",
+      imageUrl: EmployeeTracker,
+      websiteUrl: "https://github.com/alester77/Employee-Tracker",
+    },
+    {
+      id: 5,
+      title: "Note Taker App",
+      imageUrl: NoteTaker,
+      websiteUrl: "https://github.com/alester77/Note-Taker",
+    },
+    {
+      id: 6,
+      title: "Text Editor",
+      imageUrl: TextEditor,
+      websiteUrl: "https://github.com/alester77/Text-edit",
     },
   ];
   return (

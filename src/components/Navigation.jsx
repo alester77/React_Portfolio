@@ -1,22 +1,15 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
 function Navigation() {
+  const [activeSection, setActiveSection] = useState('about');
+
   return (
     <nav>
       <ul>
-        <li>
-          <a href="#about" className='aboutLink'>About</a>
-        </li>
-        {/* <li>
-          <NavLink to="/portfolio">Portfolio</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-        <li>
-          <NavLink to="/resume">Resume</NavLink>
-        </li> */}
+        <li className={activeSection === 'about' ? 'active' : ''} onClick={() => setActiveSection('about')}>About Me</li>
+        <li className={activeSection === 'portfolio' ? 'active' : ''} onClick={() => setActiveSection('portfolio')}>Portfolio</li>
+        <li className={activeSection === 'contact' ? 'active' : ''} onClick={() => setActiveSection('contact')}>Contact</li>
+        <li className={activeSection === 'resume' ? 'active' : ''} onClick={() => setActiveSection('resume')}>Resume</li>
       </ul>
     </nav>
   );

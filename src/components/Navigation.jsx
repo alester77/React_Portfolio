@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Navigation() {
-  const [activeSection, setActiveSection] = useState('about');
-
+function Navigation({ setActiveSection, activeSection }) {
   return (
     <nav>
       <ul>

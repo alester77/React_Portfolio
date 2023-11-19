@@ -1,11 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-function Header() {
+function Header({ setActiveSection, activeSection }) {
   return (
     <header>
       <h1 className="developerName">Alexa Lester</h1>
-      <Navigation />
+      <Navigation setActiveSection={setActiveSection} activeSection={activeSection} />
     </header>
   );
 }

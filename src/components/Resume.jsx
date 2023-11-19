@@ -1,10 +1,11 @@
 import React from 'react';
+import ResumeFile from '../assets/images/Resume2023.pdf'
 
 function Resume() {
   return (
     <section id="resume">
       <h2>Resume</h2>
-      <a href="path_to_resume.pdf" download>Download Resume</a>
+      <a href= {ResumeFile} download>Download Resume</a>
       <ul>
         {/* List of proficiencies */}
       </ul>

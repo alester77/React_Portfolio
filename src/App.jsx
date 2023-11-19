@@ -11,9 +11,9 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   return (
-    <div>
+    <div className='pageContainer'>
       <Header setActiveSection={setActiveSection} activeSection={activeSection} />
-      <main>
+      <main className='contentWrap'>
         {activeSection === 'about' && <AboutMe />}
         {activeSection === 'portfolio' && <Portfolio />}
         {activeSection === 'contact' && <Contact />}

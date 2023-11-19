@@ -3,10 +3,30 @@
   color: white;
 }
 
-li {
-  list-style-type: none;
+nav ul li.active {
+  color: #264653;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
 }
 
+li {
+  list-style-type: none;
+  flex-direction: row;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.contentWrap{
+  flex: 1;
+
+}
 .nameHeader {
   color: #264653;
   text-align: center;
@@ -15,4 +35,12 @@ li {
 
 .aboutLink {
   color: #264653;
+}
+
+footer {
+  background-color: #264653;
+  font-size: larger;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
